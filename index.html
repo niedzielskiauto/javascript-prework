@@ -7,11 +7,25 @@
 </head>
 <body>
 	<div class="container">
-		<div id="buttons"></div>
+        <div class="page__title">
+            <h1>Gra w kamień, papier, nożyce</h1>
+        </div>
+		<div id="interface">
+            <div class="interface__title">
+                <p>Interfejs Użytkownika</p>
+            </div>
+            <div class="interface__buttons">
+                <input type="button" id="play-rock" value="kamień" />
+                <input type="button" id="play-paper" value="papier" />
+                <input type="button" id="play-scissors" value="nożyce" />
+            </div>
+        </div>
 		<div id="messages"></div>
-        <input type="button" class="button" value="Zagraj jeszcze raz" onClick="location.reload();" />
-        
+        <div class="clear">
+            <input type="button" id="clear-button" value="wyczyść okno" />
+        </div>
 	</div>
+
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
 </body>
