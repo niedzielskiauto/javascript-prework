@@ -32,23 +32,18 @@ if (playerInput == '1'){
 printMessage('Twój ruch to: ' + playerMove);
 
 // Player wins
-if (computerMove == 'kamień' && playerMove == 'papier'){
+if (computerMove == 'kamień' && playerMove == 'papier' || computerMove == 'papier' && playerMove == 'nożyce' || computerMove == 'nożyce' && playerMove == 'kamień'){
     printMessage('Ty wygrywasz!');
-}  else if(computerMove == 'papier' && playerMove == 'nożyce'){
-    printMessage('Ty wygrywasz!');  
-}  else if(computerMove == 'nożyce' && playerMove == 'kamień'){
-    printMessage('Ty wygrywasz!');  
+
 // Computer wins
-}  else if(computerMove == 'kamień' && playerMove == 'nożyce'){
+}  else if(computerMove == 'kamień' && playerMove == 'nożyce' || computerMove == 'papier' && playerMove == 'kamień' || computerMove == 'nożyce' && playerMove == 'papier'){
     printMessage('Wygrywa komputer!');  
-}  else if(computerMove == 'papier' && playerMove == 'kamień'){
-    printMessage('Wygrywa komputer!');  
-}  else if(computerMove == 'nożyce' && playerMove == 'papier'){
-    printMessage('Wygrywa komputer!');  
+
 // Remis
-}  else if(computerMove == 'kamień' && playerMove == 'kamień' || computerMove == 'papier' && playerMove == 'papier' || computerMove == 'nożyce' && playerMove == 'nożyce'){
+}  else if(computerMove === playerMove){
     printMessage('Remis!');  
-    // Check if player input is else then 1 or 2 or 3
-}  else if(playerInput != '1' || playerInput != '2' || playerInput != '3' ){
+
+// Check if player input is else then 1 or 2 or 3
+}  else if(playerMove === "nieznany ruch"){
     printMessage(playerMove + ' ,spróbuj jeszcze raz wpisując 1 lub 2 lub 3');  
 }
