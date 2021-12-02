@@ -117,3 +117,35 @@ body {
         opacity: .7;
     }
 }
+
+.result__title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+    margin-top: 15px;
+    color: white;
+    text-align: left;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+#result {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 400px;
+    border: 1px solid #4CAF50;
+    height: 80px;
+    margin-top: 15px;
+    color: white;
+    text-align: left;
+    padding-left: 15px;
+}
+
+
+
+
+
+
