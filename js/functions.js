@@ -7,3 +7,9 @@ function printMessage(msg){
 function clearMessages(){
 	document.getElementById('messages').innerHTML = '';
 }
+
+function resetResult() {
+	playerScore = 0;
+	computerScore = 0;
+	document.getElementById('result').innerHTML = "Gracz: " + playerScore + "<br>" + "Komputer: " + computerScore;
+}

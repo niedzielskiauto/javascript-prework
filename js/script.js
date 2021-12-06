@@ -2,6 +2,8 @@
 let playerScore = 0;
 let computerScore = 0;
 
+
+
 function playGame(playerInput) {
 
     clearMessages();
@@ -80,8 +82,8 @@ document.getElementById('play-scissors').addEventListener('click', function(){
   });
 
 document.getElementById('clear-button').addEventListener('click',  clearMessages);
-  
 
+document.getElementById('reset-button').addEventListener('click',  resetResult);
 
 
 
