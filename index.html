@@ -1,34 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Kamień, papier, nożyce</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<div class="container">
-        <div class="page__title">
-            <h1>Gra w kamień, papier, nożyce</h1>
-        </div>
-		<div id="interface">
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Kamil Niedzielski">
+        <title>Kamień, papier, nożyce</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navigation">
+                <h1>Gra w papier, kamień, nożyce</h1>
+            </nav>
+
             <div class="interface__title">
                 <p>Interfejs Użytkownika</p>
             </div>
-            <div class="interface__buttons">
-                <input type="button" id="play-rock" value="kamień" />
-                <input type="button" id="play-paper" value="papier" />
-                <input type="button" id="play-scissors" value="nożyce" />
-            </div>
-        </div>
-		<div id="messages"></div>
-        <div class="clear">
-            <input type="button" id="clear-button" value="wyczyść okno" />
-        </div>
-        <div class="result__title">Wynik Gry:</div>
-        <div id="result"></div>
-	</div>
 
-	<script src="js/functions.js"></script>
-	<script src="js/script.js"></script>
-</body>
+            <div id="interface">
+                <div class="interface__buttons">
+                    <input type="button" id="play-rock" value="kamień" />
+                    <input type="button" id="play-paper" value="papier" />
+                    <input type="button" id="play-scissors" value="nożyce" />
+                </div>
+            </div>
+
+            <div class="interface__title">
+                <p>Plansza gry</p>
+            </div>
+
+            <div id="messages"></div>
+
+            <div class="clear">
+                <input type="button" id="clear-button" value="wyczyść okno" />
+            </div>
+
+            <div class="result__title">Wynik Gry:</div>
+
+            <div id="result"></div>
+            
+            <footer class="footer"> Copyright by Kamil Niedzielski</footer>
+        </div>
+        
+        <script src="js/functions.js"></script>
+        <script src="js/script.js"></script>
+    </body>
 </html>
