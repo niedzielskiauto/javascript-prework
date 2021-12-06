@@ -183,4 +183,10 @@ body {
     border-bottom: 1px solid #4CAF50;
 }
 
+/* Main rwd styles */
 
+@media (max-width: 583px){
+    #interface, #messages, #result {
+        width: 90%;
+    }
+}
