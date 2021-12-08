@@ -8,7 +8,7 @@ const clearMessages = function() {
 	document.getElementById('messages').innerHTML = '';
 }
 
-function resetResult() {
+const resetResult = function() {
 	playerScore = 0;
 	computerScore = 0;
 	document.getElementById('result').innerHTML = "Gracz: " + playerScore + "<br>" + "Komputer: " + computerScore;

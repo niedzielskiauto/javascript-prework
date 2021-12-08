@@ -44,7 +44,7 @@ const playGame= function (playerInput) {
     
 
 
-    function displayResult(argComputerMove, argPlayerMove){
+    function displayResult(argComputerMove, argPlayerMove) {
         // Player wins
         if (argComputerMove == 'kamień' && argPlayerMove == 'papier' || argComputerMove == 'papier' && argPlayerMove == 'nożyce' || argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
             printMessage('Ty wygrywasz!');
@@ -63,8 +63,8 @@ const playGame= function (playerInput) {
         }  else if(argPlayerMove === "nieznany ruch"){
             printMessage(argPlayerMove + ' ,spróbuj jeszcze raz wpisując 1 lub 2 lub 3');  
         }
-    } document.getElementById('result').innerHTML = "Gracz: " + playerScore + "<br>" + "Komputer: " + computerScore
-    
+    } 
+    document.getElementById('result').innerHTML = "Gracz: " + playerScore + "<br>" + "Komputer: " + computerScore;
 }
 
 document.getElementById('play-rock').addEventListener('click', function(){
