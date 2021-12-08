@@ -2,19 +2,20 @@
   let playerScore = 0;
   let computerScore = 0;
 
-  const playGame = function(playerInput) {
+  const playGame = function (playerInput) {
     clearMessages();
 
-    const getMoveName = function(argMoveId) {
-        switch (argMoveId) {
+    const getMoveName = function (argMoveId) {
+      switch (argMoveId) {
         case 1:
-         return "kamień";
+          return "kamień";
         case 2:
-         return "papier";
+          return "papier";
         case 3:
-         return "nożyce";
-        }}
-       
+          return "nożyce";
+      }
+    };
+
     const randomNumber = Math.floor(Math.random() * 3 + 1);
     console.log(`Wylosowana liczba to: ${randomNumber}`);
 
@@ -35,15 +36,13 @@
       ) {
         printMessage("Ty wygrywasz!");
         playerScore++;
-    } 
-      else if (argComputerMove === argPlayerMove) {
+      } else if (argComputerMove === argPlayerMove) {
         printMessage("Remis");
-    } 
-      else {
+      } else {
         printMessage("Wygrywa komputer!");
         computerScore++;
-    }
-};
+      }
+    };
     document.getElementById(
       "result"
     ).innerHTML = `Gracz: ${playerScore} <br> Komputer: ${computerScore}`;
