@@ -4,7 +4,7 @@ function printMessage(msg){
 	document.getElementById('messages').appendChild(div);
 }
 
-function clearMessages(){
+const clearMessages = function() {
 	document.getElementById('messages').innerHTML = '';
 }
 

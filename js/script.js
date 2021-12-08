@@ -1,14 +1,12 @@
-
+{
 let playerScore = 0;
 let computerScore = 0;
 
-
-
-function playGame(playerInput) {
+const playGame= function (playerInput) {
 
     clearMessages();
     
-    function getMoveName(argMoveId){
+    const getMoveName = function(argMoveId) {
         if(argMoveId == 1){
         return 'kamień';
         } else if(argMoveId == 2){
@@ -85,7 +83,7 @@ document.getElementById('clear-button').addEventListener('click',  clearMessages
 
 document.getElementById('reset-button').addEventListener('click',  resetResult);
 
-
+}
 
 
 
